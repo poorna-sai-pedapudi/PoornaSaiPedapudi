@@ -32,14 +32,11 @@ This portfolio is designed using pure HTML, CSS, and JavaScript with scroll anim
 - **Google Apps Script** (for form submission backend)
 - **Responsive Design** (Flexbox + Grid + Media Queries)
 
-## 📸 Screenshots
 
-![Home](./Images/screenshot-home.png)  
-![Projects](./Images/screenshot-projects.png)
 
 ## 🌐 Live Preview
 
-> 🔗 [**View Website**](https://poorna-sai-pedapudi.github.io/) *(replace with your live GitHub Pages URL if needed)*
+> 🔗 [**View Website**](https://poorna-sai-pedapudi.github.io/PoornaSaiPedapudi/) *(replace with your live GitHub Pages URL if needed)*
 
 ## 📬 Contact
 
