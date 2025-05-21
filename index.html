@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poorna Sai Veera Harish Pedapudi Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/70ae1606ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+  <div class="hero-image-container">
+    <img src="Images/harish.jpg" alt="Portrait of Harish" class="desktop-circle-image" />
+  </div>  
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">                                       
+            <ul id="sidemenu">                      
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#project">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark menu-close" onclick="closemenu()" id="closeBtn"></i>
+            </ul>
+            <i class="fa-solid fa-bars menu-icon" onclick="openmenu()" id="toggleBtn"></i>
+        </nav>    
+        <div class="hero-image-mobile">
+          <img src="Images/harish.jpg" alt="Harish Portrait" class="mobile-circle-image" />
+        </div>                                                                                          
+        <div class="header-text">
+          <p>Data Engineer | Data Analyst | Python Developer  </p>          
+          <h1>Hi, I'm Poorna Sai Veera<br> Harish Pedapudi </h1>
+          <div class="button-row">
+            <a href="#experience" class="btn-pink">Check out my Work</a>
+            <a href="#contact" class="btn-red">Get in touch</a>
+          </div>                   
+        </div>        
+        <!-- Scroll to About Arrow -->
+        <a href="#about" class="down-arrow">
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </div>    
+</div>    
+
+
+<!-- ABOUT SECTION -->
+
+<div id="about">
+    <div class="container">
+      <h1 class="sub-title centered-title">About Me</h1>
+      <div class="row">
+        <!-- Profile Picture + Resume -->
+        <div class="about-col-1">
+          <div class="picture-wrapper">
+            <img src="Images/user.jpg" alt="Profile Picture">
+            <a href="Images/Poorna_Sai_Resume.pdf" download class="btn btn2">Download Resume</a>
+          </div>
+        </div>
+        <!-- About Text + Tabs -->
+        <div class="about-col-2">
+          <div class="about-content">
+            <p class="about-text">
+              I’m a results-driven Data Engineer with over 5 years of experience designing scalable data 
+              pipelines and cloud-based solutions across industries like finance, education, and supply chain. 
+              Holding a Master’s in Data Analytics Engineering from George Mason University, I specialize in 
+              Python, SQL, AWS, and Snowflake to automate workflows and streamline ETL processes. My expertise 
+              spans data warehousing, infrastructure orchestration, and performance optimization using tools 
+              like Airflow, Glue, and Redshift. I’m passionate about building reliable data ecosystems that 
+              power analytics, reporting, and strategic decision-making at scale.
+            </p>
+              
+            <!-- Tab Navigation -->
+            <div class="tab-titles left-align-tabs">
+              <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            </div>
+            <!-- Education Section -->
+            <div class="tab-contents active-tab" id="education">
+              <div class="education-boxes">
+                <div class="edu-box">
+                  <h3><i class="fa-solid fa-graduation-cap"></i> MASTERS</h3>
+                  <p class="degree">George Mason University, Fairfax, VA</p>
+                  <p class="field">MS in Data Analytics Engineering</p>
+                  <p class="time">Jan 2023 – May 2024</p>
+                </div>
+                <div class="edu-box">
+                  <h3><i class="fa-solid fa-graduation-cap"></i> BACHELORS</h3>
+                  <p class="degree">Malaviya National Institute of Technology, Jaipur, India</p>
+                  <p class="field">B.Tech in Electronics & Communication</p>
+                  <p class="time">July 2016 – May 2020</p>
+                </div>
+              </div>
+            </div>
+            <!-- Skills Tab -->
+            <div class="tab-contents" id="skills">
+              <div class="skills-grid">
+                <div class="skill-box">
+                  <h3>💻 Languages & Tools</h3>
+                  <p>Python, SQL, R, Bash, Shell Scripting, Excel, Power BI, Tableau, Jupyter, Git, SSMS,
+                    SSRS, Markdown</p>
+                </div>
+                <div class="skill-box">
+                  <h3>📚 Libraries & Frameworks</h3>
+                  <p>Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, PySpark, XGBoost, LightGBM, PyTorch, BeautifulSoup, Statsmodels, dbt, Apache Airflow</p>
+                </div>
+                <div class="skill-box">
+                  <h3>☁️ Cloud & Databases</h3>
+                  <p>AWS (S3, Redshift, Glue, Lambda, CloudWatch, Athena), Snowflake, MySQL, PostgreSQL, MongoDB, BigQuery, Databricks, GCP, Microsoft SQL Server</p>
+                </div>
+                <div class="skill-box">
+                  <h3>🧠 Analytics & ML</h3>
+                  <p>EDA, A/B Testing, KPI Design, Cohort Analysis, Time Series Forecasting, Predictive Modeling, Statistical Testing, Root Cause Analysis, Data Modeling, Clustering, Regression, Classification</p>
+                </div>
+                <div class="skill-box">
+                  <h3>🚀 Core Strengths</h3>
+                  <p>Pipeline Automation, Dashboard Design, SQL Optimization, Feature Engineering, Model Evaluation, Workflow Optimization, Data Governance, Agile/Scrum, ETL Design, Data Lake Management, Orchestration, Cloud Security, Schema Mapping</p>
+                </div>
+                <div class="skill-box">
+                  <h3>🧰 Other Tools</h3>
+                  <p>API Integration, Version Control (Git/GitHub), Prompt Engineering, CI/CD Concepts, CI/CD Pipelines, Lucidchart, Experiment Tracking (MLflow), Data Ethics, CloudWatch, GitHub Actions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+<!---Professional Experience-->
+
+<div id="experience">
+    <div class="container">
+      <h1 class="sub-title centered-title">Professional Experience</h1>
+      <div class="experience-list">
+        <div class="experience-card">
+          <i class="fa-solid fa-cloud"></i>
+          <h2>Indukuri Information Services Inc</h2>
+          <p class="job-role">Data Engineer</p>
+          <a href="#" onclick="openModal('indu-modal'); return false;">View Work</a>
+        </div>
+        <div class="experience-card">
+          <i class="fa-solid fa-chart-simple"></i>
+          <h2>Hildreth Institute</h2>
+          <p class="job-role">Data Analyst</p>
+          <a href="#" onclick="openModal('hild-modal'); return false;">View Work</a>
+        </div>
+        <div class="experience-card">
+          <i class="fa-solid fa-code"></i>
+          <h2>Tritech Software Pvt Ltd</h2>
+          <p class="job-role">Data Engineer | Data Analyst</p>
+          <a href="#" onclick="openModal('tritech-modal'); return false;">View Work</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- View Work Modal: Indukuri Information Services -->
+<div id="indu-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('indu-modal')">&times;</span>
+      <h2>Indukuri Information Services Inc</h2>
+      <p class="modal-location"><i class="fa-solid fa-location-dot"></i> GoodlettsVille, TN (Remote)</p>
+      <p class="modal-role"><strong>Role:</strong> Data Engineer </p>
+      <p class="modal-duration"><strong>Duration:</strong> May 2024 – Present</p>
+      <p class="modal-responsibilities">Responsibilities:</p>
+      <ul class="modal-points">
+        <li>Built ETL pipelines using AWS Glue and Lambda to automate ingestion of financial data from multiple source systems into Redshift.</li>
+        <li>Designed PySpark batch workflows to transform semi-structured log data and optimize storage in a partitioned S3 data lake.</li>
+        <li>Scheduled and managed DAGs with Apache Airflow to improve the consistency of nightly reporting jobs and reduce operational lag.</li>
+        <li>Automated cloud infrastructure deployment with IaC templates and integrated CloudWatch alerts to enhance pipeline reliability.</li>
+        <li>Developed QuickSight dashboards for centralized monitoring of KPIs, replacing fragmented reporting methods.</li>
+        <li>Created CI/CD pipelines linked with GitHub to streamline version control and deployment of data transformation layers.</li>
+        <li>Documented data architectures and schema mappings using Lucidchart to support faster onboarding and cross-team transparency.</li>
+      </ul>
+      <p class="modal-skills">
+        <strong>Skills:</strong>
+        Python, SQL, AWS Glue, AWS Lambda, AWS Redshift, Apache Airflow, PySpark, S3 Data Lake, QuickSight, GitHub CI/CD, CloudWatch, Lucidchart, ETL Automation, Infrastructure as Code (IaC), Data Documentation
+      </p>      
+    </div>
+</div>
+
+<!-- View Work Modal: Hildreth Institute -->
+<div id="hild-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('hild-modal')">&times;</span>
+      <h2>Hildreth Institute</h2>
+      <p class="modal-location"><i class="fa-solid fa-location-dot"></i> Fairfax, VA</p>
+      <p class="modal-role"><strong>Role:</strong> Data Analyst</p>
+      <p class="modal-duration"><strong>Duration:</strong> Jan 2024 – May 2024</p>
+      <p class="modal-responsibilities">Responsibilities:</p>
+      <ul class="modal-points">
+        <li>Created interactive Tableau dashboards to visualize trends in education policy using internal and third-party datasets.</li>
+        <li>Queried Redshift with SQL and Python to analyze institutional performance across 250K+ records, reducing report turnaround time by over a week.</li>
+        <li>Implemented Lambda-based automation with S3 triggers to streamline delivery of financial aid reports.</li>
+        <li>Cleaned and preprocessed API-extracted education data using Pandas, reducing manual workload by 90%.</li>
+        <li>Conducted A/B tests and statistical modeling with Scikit-learn and R to evaluate tuition impact and policy effectiveness.</li>
+        <li>Built Redshift ingestion pipelines for long-term scalability and modeled structured datasets to power dashboard layers.</li>
+      </ul>
+      <p class="modal-skills">
+        <strong>Skills:</strong>
+        Python, SQL, Redshift, Tableau, AWS Lambda, AWS S3, Pandas, API Integration, A/B Testing, Scikit-learn, R, Data Cleaning, Statistical Modeling, Data Visualization
+      </p>      
+    </div>
+</div>
+
+<!-- View Work Modal: Tritech Software Pvt Ltd -->
+<div id="tritech-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('tritech-modal')">&times;</span>
+      <h2>Tritech Software Pvt Ltd</h2>
+      <p class="modal-location"><i class="fa-solid fa-location-dot"></i> Hyderabad, India</p>
+      <p class="modal-role"><strong>Role:</strong> Data Engineer | Data Analyst</p>
+      <p class="modal-duration"><strong>Duration:</strong> May 2019 – Dec 2022</p>
+      <p class="modal-responsibilities">Responsibilities:</p>
+      <ul class="modal-points">
+        <li>Designed and migrated ERP data pipelines to Redshift using Python, SQL, and Apache Airflow for batch job orchestration.</li>
+        <li>Refactored ETL workflows with Glue and SQL scripts to reduce job runtimes and eliminate redundant scans.</li>
+        <li>Developed PySpark scripts to transform transactional data and load dimensional models for downstream BI use.</li>
+        <li>Created Tableau dashboards to visualize regional sales trends and support supply chain planning.</li>
+        <li>Mapped legacy schemas to new Redshift architecture, ensuring data consistency across the warehouse.</li>
+        <li>Configured S3 buckets with partitions to lower Athena query costs and accelerate log data processing.</li>
+        <li>Managed Git-based version control and collaborated on QA validation and schema documentation across teams.</li>
+      </ul>
+      <p class="modal-skills">
+        <strong>Skills:</strong>
+        Python, SQL, Apache Airflow, AWS Redshift, PySpark, AWS S3, Tableau, Git, Data Migration, Glue, Data Warehousing, ERP Data Integration, Dimensional Modeling, Athena, Supply Chain Analytics
+      </p>      
+    </div>
+</div>
+  
+
+<!-- Projects Section -->
+<div id="project">
+    <div class="container">
+      <h1 class="sub-title centered-title">Projects</h1>
+      <div class="project-intro">
+        <p class="section-subtext">
+          Explore my portfolio of end-to-end projects that showcase my skills in data engineering, analysis,
+          cloud, and machine learning. Each project is hands-on, production-oriented, and designed for business
+          impact.
+        </p>
+      </div>
+       <!---- Project Filter Buttons -->
+       <!-- Place this right below <h1 class="sub-title centered-title"> -->
+        <div class="project-filter-wrapper">
+          <div class="project-filters">
+            <div class="filter-row">
+              <button class="filter-btn active" data-category="all">All</button>
+              <button class="filter-btn" data-category="data-engineering">Data Engineering</button>
+              <button class="filter-btn" data-category="data-analysis">Data Analysis</button>
+              <button class="filter-btn" data-category="machine-learning">Machine Learning</button>
+            </div>
+            <div class="filter-row">
+              <button class="filter-btn" data-category="data-visualization">Data Visualization</button>
+              <button class="filter-btn" data-category="cloud-projects">Cloud Projects</button>
+            </div>
+          </div>
+        </div>        
+      <div class="work-list">
+        <!-------------------------- Projects Begin -------------------------------->
+
+        <!-------------------------------------- Project 7 ----------------------------------------------------->
+        <div class="project-card-container-filter">
+          <div class="project-tags">
+            <span class="tag">Data Engineering</span>
+            <span class="tag">Cloud Projects</span>
+          </div>
+          <div class="work">
+            <img src="Images/pipeline.jpg">
+            <div class="layer">
+              <h3>End-to-End GCP Data Pipeline with Airflow, Data Fusion & BigQuery</h3>
+              <a href="#" onclick="openModal('project7-modal'); return false;">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!---Project 7 card -->
+        <div id="project7-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('project7-modal')">&times;</span>
+            <!-- Title -->
+            <h2>End-to-End GCP Data Pipeline with Airflow, Data Fusion & BigQuery</h2>
+            <!-- Project Image -->
+            <img src="Images/pipeline.jpg" alt="Project Screenshot" class="modal-project-img" />
+            <!-- Overview -->
+            <p class="modal-role">
+              <strong>Overview:</strong>
+              Developed a scalable and secure ETL pipeline on Google Cloud Platform (GCP) to automate employee
+               data ingestion, transformation, and reporting. The pipeline uses Python and Apache Airflow to 
+               orchestrate extraction, Cloud Data Fusion for transformation with data masking, and BigQuery for 
+               structured analytics—culminating in a dynamic dashboard built in Looker Studio.
+            </p>
+            <!-- Focus -->
+            <p class="modal-duration">
+              <strong>Focus:</strong> Cloud Data Engineering, ETL Automation, Data Orchestration, 
+              Data Masking, BigQuery Analytics, Looker Studio Reporting
+            </p>
+            <!-- Results -->
+            <strong>Results:</strong>
+            <ul class="modal-points">
+              <li>Automated the full data pipeline using Apache Airflow (Composer), triggering daily end-to-end workflow execution across services.</li>
+              <li>Generated synthetic employee records using Python (Faker) and securely uploaded data to GCS using the Google Cloud Storage SDK.</li>
+              <li>Leveraged Data Fusion pipelines for real-time transformation and masking of sensitive fields (e.g., email, salary, passwords).</li>
+              <li>Loaded cleansed and structured data into BigQuery with partitioned tables, optimizing storage and query performance.</li>
+              <li>Built interactive dashboards in Looker Studio with drilldowns by department, salary range, and job roles for quick insight generation.</li>
+            </ul>
+            <!-- Skills -->
+            <p class="modal-skills">
+              <strong>Skills:</strong> Python, Google Cloud Storage (GCS), Cloud Data Fusion, BigQuery, 
+              Cloud Composer, Apache Airflow, Looker Studio, ETL, Data Masking, Faker, 
+              Data Pipeline Orchestration, Data Engineering.
+            </p>
+            <!-- Challenges -->
+            <div class="modal-challenges">
+              <strong>Challenges:</strong>
+              <ul class="modal-points">
+                <li>Integrating external Python script execution with Composer’s DAG structure; resolved using BashOperator to trigger the script before the Data Fusion pipeline.</li>
+                <li>Ensuring secure and consistent uploads to GCS during daily DAG runs; resolved by implementing a robust retry mechanism and using project-scoped authentication via the Google Cloud client.</li>
+              </ul>
+            </div>
+            <!-- GitHub Link -->
+            <p class="modal-link">
+              <a href="https://github.com/poorna-sai-pedapudi/gcp-etl-datafusion-airflow" 
+                 target="_blank" 
+                 class="github-link">
+                <i class="fa-brands fa-github"></i> GitHub Repository
+              </a>
+            </p>
+            <!-- Back Button -->
+            <button class="back-btn" onclick="closeModal('project7-modal', '#project')">
+              <i class="fa-solid fa-arrow-left"></i> Back to Projects
+            </button>
+          </div>
+        </div>
+
+
+        <!-------------------------------------- Project 10 ----------------------------------------------------->
+        <div class="project-card-container-filter">
+          <div class="project-tags">
+            <span class="tag">Data Engineering</span>
+            <span class="tag">Cloud Projects</span>
+          </div>
+          <div class="work">
+            <img src="Images/product.png">
+            <div class="layer">
+              <h3>Product Recommendation Engine</h3>
+              <a href="#" onclick="openModal('project10-modal'); return false;">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!---Project 10 card -->
+        <div id="project10-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('project10-modal')">&times;</span>
+            <!-- Title -->
+            <h2>Product Recommendation Engine for E-commerce Optimization</h2>
+            <!-- Project Image -->
+            <img src="Images/product.png" alt="Project Screenshot" class="modal-project-img" />
+            <!-- Overview -->
+            <p class="modal-role">
+              <strong>Overview:</strong>
+              Built and deployed a recommendation system to personalize shopping experiences on an e-commerce 
+              platform. Leveraging machine learning algorithms, exploratory analysis, and backend integration, 
+              the project aimed to boost user engagement, average order value, and overall conversion rates.
+            </p>
+            <!-- Focus -->
+            <p class="modal-duration">
+              <strong>Focus:</strong> Exploratory Data Analysis (EDA), Recommender Systems, 
+              Machine Learning Integration, Data Pipeline Development, Customer Behavior Analysis
+            </p>
+            <!-- Results -->
+            <strong>Results:</strong>
+            <ul class="modal-points">
+              <li>Conducted extensive exploratory data analysis (EDA) to extract purchasing patterns, informing model feature selection and improving dataset efficiency.</li>
+              <li>Designed and trained collaborative filtering and content-based recommendation models, optimizing product suggestions for customer profiles.</li>
+              <li>Integrated the recommender system into the e-commerce backend, increasing average order value by 15% and driving cross-sell and upsell performance.</li>
+              <li>Boosted platform conversion rates by 18% through personalized recommendations and adaptive ranking strategies.</li>
+            </ul>
+            <!-- Skills -->
+            <p class="modal-skills">
+              <strong>Skills:</strong> Python, Pandas, Matplotlib/Seaborn (Visualization), Scikit-learn, 
+              Recommendation Algorithms, Data Engineering
+            </p>
+            <!-- Challenges -->
+            <div class="modal-challenges">
+              <strong>Challenges:</strong>
+              <ul class="modal-points">
+                <li>Faced sparse and noisy transactional data challenges, which were resolved by applying hybrid recommendation techniques combining collaborative and content-based approaches to maximize recommendation relevance.</li>
+                <li>Addressed cold start issues for new users and products by implementing fallback strategies based on popular item trends and demographic matching.</li>
+              </ul>
+            </div>
+            <!-- GitHub Link -->
+            <p class="modal-link">
+              <a href="https://github.com/poorna-sai-pedapudi/Product-Recommendation-Engine" 
+                 target="_blank" 
+                 class="github-link">
+                <i class="fa-brands fa-github"></i> GitHub Repository
+              </a>
+            </p>
+            <!-- Back Button -->
+            <button class="back-btn" onclick="closeModal('project10-modal', '#project')">
+              <i class="fa-solid fa-arrow-left"></i> Back to Projects
+            </button>
+          </div>
+        </div>
+
+
+        <!-------------------------------------- Project 20 --------------------------------------------------->
+        <div class="project-card-container-filter">
+          <div class="project-tags">
+            <span class="tag">Machine Learning</span>
+          </div>
+          <div class="work">
+            <img src="Images/fraud.png">
+            <div class="layer">
+              <h3>Fraud Risk Prediction and Monitoring System</h3>
+              <a href="#" onclick="openModal('project20-modal'); return false;">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!---Project 20 card -->
+        <div id="project20-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('project20-modal')">&times;</span>
+            <!-- Title -->
+            <h2>Fraud Risk Prediction and Monitoring System</h2>
+            <!-- Project Image -->
+            <img src="Images/fraud.png" alt="Project Screenshot" class="modal-project-img" />
+            <!-- Overview -->
+            <p class="modal-role">
+              <strong>Overview:</strong>
+              Built a robust machine learning-based fraud detection platform capable of identifying suspicious
+              transactions with high precision. The system utilized predictive analytics, optimized data pipelines,
+              and real-time alerting to significantly reduce financial losses while ensuring compliance and system 
+              scalability across cloud infrastructure.
+            </p>
+            <!-- Focus -->
+            <p class="modal-duration">
+              <strong>Focus:</strong> Data Engineering, Predictive Modeling, Real-Time Analytics, 
+              Feature Engineering, Cloud Deployment
+            </p>
+            <!-- Results -->
+            <strong>Results:</strong>
+            <ul class="modal-points">
+              <li>Boosted fraud detection accuracy from 78% to 97% by applying optimized classification models and advanced feature engineering.</li>
+              <li>Processed over 100 million transactions with a 40% improvement in system response time, enhancing real-time detection capabilities.</li>
+              <li>Reduced false positives by 65%, resulting in better operational efficiency and faster legitimate transaction approvals.</li>
+              <li>Implemented real-time fraud alerts and dynamic dashboards, supporting executive monitoring and faster decision-making.</li>
+              <li>Prevented an estimated $1.2 million in potential fraud losses by integrating continuous retraining mechanisms based on evolving threat patterns.</li>
+            </ul>
+            <!-- Skills -->
+            <p class="modal-skills">
+              <strong>Skills:</strong> Python, SQL, AWS (Lambda, S3), Machine Learning (Scikit-learn), Data Pipelines, Real-Time Monitoring
+            </p>
+            <!-- Challenges -->
+            <div class="modal-challenges">
+              <strong>Challenges:</strong>
+              <ul class="modal-points">
+                <li>Dealt with rapidly changing fraud behaviors by implementing retrainable models that dynamically adapted to new transaction patterns without system downtime.</li>
+                <li>Solved system scalability bottlenecks by deploying distributed data pipelines on AWS, allowing real-time ingestion, monitoring, and high availability.</li>
+              </ul>
+            </div>
+            <!-- GitHub Link -->
+            <p class="modal-link">
+              <a href="https://github.com/poorna-sai-pedapudi/Fraud-Risk-Prediction" 
+                 target="_blank" 
+                 class="github-link">
+                <i class="fa-brands fa-github"></i> GitHub Repository
+              </a>
+            </p>
+            <!-- Back Button -->
+            <button class="back-btn" onclick="closeModal('project20-modal', '#project')">
+              <i class="fa-solid fa-arrow-left"></i> Back to Projects
+            </button>
+          </div>
+        </div>  
+
+
+        <!-------------------------------------- Project 30 --------------------------------------------------->
+        <div class="project-card-container-filter">
+          <div class="project-tags">
+            <span class="tag">Machine Learning</span>
+          </div>
+          <div class="work">
+            <img src="Images/autism.jpg">
+            <div class="layer">
+              <h3>Autism Prediction Using Machine Learning</h3>
+              <a href="#" onclick="openModal('project30-modal'); return false;">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!---Project 30 card -->
+        <div id="project30-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('project30-modal')">&times;</span>
+            <!-- Title -->
+            <h2>Autism Prediction Using Machine Learning</h2>
+            <!-- Project Image -->
+            <img src="Images/autism.jpg" alt="Project Screenshot" class="modal-project-img" />
+            <!-- Overview -->
+            <p class="modal-role">
+              <strong>Overview:</strong>
+              Built a machine learning-based web system to predict autism spectrum disorder (ASD) in
+              individuals using behavioral and demographic data. The model automates early-stage detection 
+              using a questionnaire dataset, helping streamline mental health screening processes.
+            </p>
+            <!-- Focus -->
+            <p class="modal-duration">
+              <strong>Focus:</strong> Data Engineering, Predictive Modeling, Real-Time Analytics,
+              Feature Engineering, Cloud Deployment
+            </p>
+            <!-- Results -->
+            <strong>Results:</strong>
+            <ul class="modal-points">
+              <li>Performed data preprocessing on 1,000+ records with missing value handling, label encoding, and feature scaling.</li>
+              <li>Applied feature engineering to convert categorical variables like age group, ethnicity, and gender into model-ready formats.</li>
+              <li>Trained and evaluated multiple classification models including Logistic Regression, SVM, Random Forest, and XGBoost.</li>
+              <li>Selected Random Forest (via GridSearchCV) as the best performer with 96% accuracy and strong precision-recall balance.</li>
+              <li>Deployed the model using best_model.pkl and encoders.pkl, enabling real-time predictions on new inputs.</li>
+            </ul>
+            <!-- Skills -->
+            <p class="modal-skills">
+              <strong>Skills:</strong> Python, Pandas, Scikit-learn, Matplotlib, Seaborn, LabelEncoder, 
+              GridSearchCV, Random Forest, XGBoost, Jupyter Notebook, Model Deployment (Pickle)
+            </p>
+            <!-- Challenges -->
+            <div class="modal-challenges">
+              <strong>Challenges:</strong>
+              <ul class="modal-points">
+                <li>The dataset had high cardinality categorical features and imbalanced classes, which risked reducing model accuracy; this was mitigated using label encoding, feature pruning, and class-weight balancing within ensemble models.</li>
+                <li>Early models showed overfitting due to irrelevant or redundant features; this was addressed by applying feature importance ranking and optimizing hyperparameters with cross-validation.</li>
+              </ul>
+            </div>
+            <!-- GitHub Link -->
+            <p class="modal-link">
+              <a href="https://github.com/poorna-sai-pedapudi/Autism-Prediction" 
+                 target="_blank" 
+                 class="github-link">
+                <i class="fa-brands fa-github"></i> GitHub Repository
+              </a>
+            </p>
+            <!-- Back Button -->
+            <button class="back-btn" onclick="closeModal('project30-modal', '#project')">
+              <i class="fa-solid fa-arrow-left"></i> Back to Projects
+            </button>
+          </div>
+        </div>
+
+
+        <!-------------------------------------- Project 40 --------------------------------------------------->
+        <div class="project-card-container-filter">
+          <div class="project-tags">
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Data Visualization</span>
+          </div>
+          <div class="work">
+            <img src="Images/customer_segmentation.jpeg">
+            <div class="layer">
+              <h3>Bank Customer Acquisition and Financial Trend Dashboard</h3>
+              <a href="#" onclick="openModal('project40-modal'); return false;">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>  
+        <!------Project 40 card------->
+        <div id="project40-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('project40-modal')">&times;</span>
+            <!-- Title -->
+            <h2>Bank Customer Acquisition and Financial Trend Dashboard</h2>
+            <!-- Project Image -->
+            <img src="Images/customer_segmentation.jpeg" alt="Project Screenshot" class="modal-project-img" />
+            <!-- Overview -->
+            <p class="modal-role">
+              <strong>Overview:</strong>
+              Designed and developed a comprehensive business intelligence dashboard by integrating Python, SQL, 
+              and Excel pipelines. The project focused on cleaning, transforming, and analyzing a large banking 
+              dataset to uncover key trends in customer acquisition, campaign effectiveness, and product penetration.
+              The insights delivered through Power BI visualizations empowered strategic decision-making for marketing
+              and sales optimization.
+            </p>
+            <!-- Focus -->
+            <p class="modal-duration">
+              <strong>Focus:</strong>
+              Data Cleaning, Exploratory Data Analysis (EDA), Data Visualization, Business Intelligence,
+              SQL-Python Integration, Dashboard Engineering
+            </p>
+            <!-- Results -->
+            <strong>Results:</strong>
+            <ul class="modal-points">
+              <li> Built a fully interactive Power BI dashboard that consolidated customer behavior, campaign response, and financial performance metrics into one unified view.</li>
+              <li> Conducted extensive EDA in Python and SQL, identifying key drivers behind customer acquisition rates, improving marketing targeting strategies.</li>
+              <li> Streamlined a messy raw dataset of over 40+ features through robust cleaning, feature selection, and enrichment processes, improving dashboard performance by 30%.</li>
+              <li> Integrated multiple data sources (CSV, SQL, Python outputs) into Power BI’s data model, enabling seamless auto-refresh and cross-platform analytics.</li>
+              <li> Produced executive-level visualizations with drill-down capabilities, KPI tracking, dynamic segmentation, and forecasting, improving stakeholder decision-making accuracy by 25%.</li>
+            </ul>
+            <!-- Skills -->
+            <p class="modal-skills">
+              <strong>Skills:</strong> Python, SQL, Excel, Pandas, Power BI, Data Modeling, DAX (Power BI Formulas), Data Engineering, Business Analytics
+            </p>
+            <!-- Challenges -->
+            <div class="modal-challenges">
+              <strong>Challenges:</strong>
+              <ul class="modal-points">
+                <li> Addressed significant data inconsistency issues across Excel and SQL sources by building standardized cleaning pipelines in Python, ensuring high-quality data fed into the BI layer.</li>
+                <li> Overcame Power BI’s initial query performance bottlenecks by optimizing data models, implementing relationship indexing, and applying DAX measures for dynamic aggregation without lag.</li>
+              </ul>
+            </div>
+            <!-- GitHub Link -->
+            <p class="modal-link">
+              <a href="https://github.com/poorna-sai-pedapudi/Bank-Customer-Acquisition-and-Financial-Trend-Dashboard" 
+                 target="_blank" 
+                 class="github-link">
+                <i class="fa-brands fa-github"></i> GitHub Repository
+              </a>
+            </p>
+            <!-- Back Button -->
+            <button class="back-btn" onclick="closeModal('project40-modal', '#project')">
+              <i class="fa-solid fa-arrow-left"></i> Back to Projects
+            </button>
+          </div>
+        </div>
+
+
+        <!-------------------------------------- Project 50 --------------------------------------------------->
+        <div class="project-card-container-filter">
+          <div class="project-tags">
+            <span class="tag">Data Visualization</span>
+          </div>
+          <div class="work">
+            <img src="Images/sales-dashboard.jpeg">
+            <div class="layer">
+              <h3>Sales Performance Dashboard and Forecasting System</h3>
+              <a href="#" onclick="openModal('project50-modal'); return false;">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!----------Project 50 card ----------->
+        <div id="project50-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('project50-modal')">&times;</span>
+            <!-- Title -->
+            <h2>Sales Performance Dashboard and Forecasting System</h2>
+            <!-- Project Image -->
+            <img src="Images/sales-dashboard.jpeg" alt="Project Screenshot" class="modal-project-img" />
+            <!-- Overview -->
+            <p class="modal-role">
+              <strong>Overview:</strong>
+              Built a predictive analytics dashboard to monitor sales performance and forecast future trends. 
+              The project integrated time-series modeling and cloud-based warehousing to provide dynamic, 
+              real-time insights for decision-making and sales strategy optimization.
+            </p>
+            <!-- Focus -->
+            <p class="modal-duration">
+              <strong>Focus:</strong> Sales Forecasting, Time Series Analysis, Predictive Modeling, Data Visualization, ETL Pipelines, Real-Time Analytics
+            </p>
+            <!-- Results -->
+            <strong>Results:</strong>
+            <ul class="modal-points">
+              <li>Developed and deployed predictive sales models using Python’s time-series forecasting libraries, improving forecasting precision by 18%.</li>
+              <li>Built dynamic Power BI dashboards with real-time data refresh from Snowflake, enabling regional and product-level sales monitoring.</li>
+              <li>Automated ETL pipelines for sales data extraction and transformation, reducing manual reporting effort by 60%.</li>
+              <li>Integrated anomaly detection to flag outliers and underperforming segments, leading to quicker intervention strategies.</li>
+              <li>Delivered executive-level insights through tailored KPI cards and interactive drill-downs, improving strategic decision-making accuracy.</li>
+            </ul>
+            <!-- Skills -->
+            <p class="modal-skills">
+              <strong>Skills:</strong> Python, Snowflake, Power BI, SQL, Time Series Forecasting, Data Visualization, ETL Automation
+            </p>
+            <!-- Challenges -->
+            <div class="modal-challenges">
+              <strong>Challenges:</strong>
+              <ul class="modal-points">
+                <li>Addressed forecasting inconsistencies caused by sales seasonality and external events by incorporating seasonality adjustments and moving average smoothing techniques into the predictive models.</li>
+                <li>Solved real-time refresh lag issues between Snowflake and Power BI by optimizing query performance and enabling incremental data loading.</li>
+              </ul>
+            </div>
+            <!-- GitHub Link -->
+            <p class="modal-link">
+              <a href="https://github.com/poorna-sai-pedapudi/Sales-Performance-HR-Dashboard" 
+                 target="_blank" 
+                 class="github-link">
+                <i class="fa-brands fa-github"></i> GitHub Repository
+              </a>
+            </p>
+            <!-- Back Button -->
+            <button class="back-btn" onclick="closeModal('project50-modal', '#project')">
+              <i class="fa-solid fa-arrow-left"></i> Back to Projects
+            </button>
+          </div>
+        </div>
+
+
+
+        <!-------------------------------------- Project 60 --------------------------------------------------->
+        <div class="project-card-container-filter">
+          <div class="project-tags">
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Data Visualization</span>
+          </div>
+          <div class="work">
+            <img src="Images/pizza.jpg">
+            <div class="layer">
+              <h3>Pizza Sales Analytics Dashboard</h3>
+              <a href="#" onclick="openModal('project60-modal'); return false;">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!---project 60 card----->
+        <div id="project60-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('project60-modal')">&times;</span>
+            <!-- Title -->
+            <h2>Pizza Sales Analytics Dashboard</h2>
+            <!-- Project Image -->
+            <img src="Images/pizza.jpg" alt="Project Screenshot" class="modal-project-img" />
+            <!-- Overview -->
+            <p class="modal-role">
+              <strong>Overview:</strong> 
+              Designed a comprehensive business intelligence dashboard to analyze pizza sales performance using
+              SQL, Excel, and Tableau. The project focused on uncovering key revenue drivers, identifying 
+              top-selling products, and optimizing marketing strategies through data-driven insights.
+            </p>
+            <!-- Focus -->
+            <p class="modal-duration">
+              <strong>Focus:</strong> Data Analysis, Dashboard Design, Sales Performance Monitoring, KPI Development, SQL Analytics, Business Intelligence
+            </p>
+            <!-- Results -->
+            <strong>Results:</strong>
+            <ul class="modal-points">
+              <li>Boosted executive decision-making by transforming raw transactional data into an interactive Tableau dashboard, enabling instant visibility into key sales metrics and business drivers.</li>
+              <li>Created 12+ dynamic KPIs in Tableau including revenue trends, average order value, and category-level performance.</li>
+              <li>Identified top 5 best-selling pizzas by revenue, quantity, and order frequency—supporting targeted inventory decisions.</li>
+              <li>Revealed peak sales hours and weekly trends to improve staffing and promotional timing.</li>
+              <li>Enabled management to track real-time sales performance segmented by size, category, and time with clean interactive visuals.</li>
+
+            </ul>
+            <!-- Skills -->
+            <p class="modal-skills">
+              <strong>Skills:</strong> SQL, Tableau, Excel, Data Aggregation, ETL, Data Cleaning, Pivot Tables, 
+              KPI Metrics, Visualization, Trend Analysis, Dashboard Publishing
+            </p>
+            <!-- Challenges -->
+            <div class="modal-challenges">
+              <strong>Challenges:</strong>
+              <ul class="modal-points">
+                <li>Raw sales data lacked clear structure and contained inconsistencies; solved this by using Excel for pre-cleaning and SQL for transformation and normalization.</li>
+                <li>Key business metrics were not readily available in the raw dataset; calculated KPIs like Average Order Value, Revenue %, and Pizza-wise Sales using custom SQL queries and integrated them directly into Tableau visuals.</li>
+              </ul>
+            </div>
+            <!-- GitHub Link -->
+            <p class="modal-link">
+              <a href="https://github.com/poorna-sai-pedapudi/Pizza-Sales-Dashboard" 
+                 target="_blank" 
+                 class="github-link">
+                <i class="fa-brands fa-github"></i> GitHub Repository
+              </a>
+            </p>
+            <!-- Back Button -->
+            <button class="back-btn" onclick="closeModal('project60-modal', '#project')">
+              <i class="fa-solid fa-arrow-left"></i> Back to Projects
+            </button>
+          </div>
+        </div>
+
+
+
+        <!-------------------------------------- Project 70 --------------------------------------------------->
+        <div class="project-card-container-filter">
+          <div class="project-tags">
+            <span class="tag">Data Analysis</span>
+          </div>
+          <div class="work">
+            <img src="Images/web_scracping.png">
+            <div class="layer">
+              <h3>Amazon Price Tracker using Web Scraping</h3>
+              <a href="#" onclick="openModal('project70-modal'); return false;">
+                  <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-----Project 70 card----->
+        <div id="project70-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('project70-modal')">&times;</span>
+            <!-- Title -->
+            <h2>Amazon Price Tracker using Web Scraping</h2>
+            <!-- Project Image -->
+            <img src="Images/web_scracping.png" alt="Project Screenshot" class="modal-project-img" />
+            <!-- Overview -->
+            <p class="modal-role">
+              <strong>Overview:</strong>
+              Built an automated and scalable pipeline to scrape real-time pricing data from Amazon.
+              The project enabled tracking of competitive pricing patterns, streamlined product monitoring
+              workflows, and provided structured insights for pricing optimization strategies.
+            </p>
+            <!-- Focus -->
+            <p class="modal-duration">
+              <strong>Focus:</strong> Web Scraping, AWS Automation, Real-Time Data Capture, Data Structuring, Performance Monitoring
+            </p>
+            <!-- Results -->
+            <strong>Results:</strong>
+            <ul class="modal-points">
+              <li>Captured over 10,000 product prices per minute from Amazon using a robust and concurrent scraping architecture powered by Python and BeautifulSoup.</li>
+              <li>Achieved 20% reduction in retrieval errors by implementing proxy rotation, randomized headers, and retry logic to bypass anti-bot mechanisms.</li>
+              <li>Leveraged AWS Lambda and S3 to build a serverless, event-driven workflow that enabled on-demand scraping and seamless data storage with zero infrastructure maintenance.</li>
+              <li>Transformed unstructured HTML into clean, query-ready datasets using Pandas and SQL logic, reducing data cleaning time by 60%.</li>
+              <li>Developed logging and alert mechanisms to monitor scraper health and notify on exceptions, ensuring 99.5% pipeline uptime.</li>
+            </ul>
+            <!-- Skills -->
+            <p class="modal-skills">
+              <strong>Skills:</strong> Python, BeautifulSoup, Pandas, SQL, AWS Lambda, AWS S3, Data Engineering
+            </p>
+            <!-- Challenges -->
+            <div class="modal-challenges">
+              <strong>Challenges:</strong>
+              <ul class="modal-points">
+                <li>Overcame anti-bot detection mechanisms (captchas, IP blocks) by implementing rotating proxies, user-agent spoofing, and randomized crawling intervals to simulate human browsing behavior.</li>
+                <li>Resolved resource scaling bottlenecks by migrating the scraper to AWS Lambda, enabling concurrent executions and seamless data dumps to S3, ensuring high availability under peak loads.</li>
+              </ul>
+            </div>
+            <!-- GitHub Link -->
+            <p class="modal-link">
+              <a href="https://github.com/poorna-sai-pedapudi/Amazon-Web-Scrapper" 
+                 target="_blank" 
+                 class="github-link">
+                <i class="fa-brands fa-github"></i> GitHub Repository
+              </a>
+            </p>
+            <!-- Back Button -->
+            <button class="back-btn" onclick="closeModal('project70-modal', '#project')">
+              <i class="fa-solid fa-arrow-left"></i> Back to Projects
+            </button>
+          </div>
+        </div>
+
+
+        <!-------------------------------------- Project 80 --------------------------------------------------->
+        <div class="project-card-container-filter">
+          <div class="project-tags">
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Data Visualization</span>
+          </div>
+          <div class="work">
+            <img src="Images/covid_19.jpeg">
+            <div class="layer">
+              <h3>COVID-19 Global Data Analytics Dashboard</h3>
+              <a href="#" onclick="openModal('project80-modal'); return false;">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!---project 80 card----->
+        <div id="project80-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('project80-modal')">&times;</span>
+            <!-- Title -->
+            <h2>COVID-19 Global Data Analytics Dashboard</h2>
+            <!-- Project Image -->
+            <img src="Images/covid_19.jpeg" alt="Project Screenshot" class="modal-project-img" />
+            <!-- Overview -->
+            <p class="modal-role">
+              <strong>Overview:</strong> 
+              Developed a scalable and interactive dashboard to explore global COVID-19 datasets, providing 
+              actionable insights into infection, fatality, and vaccination trends. The project enabled health 
+              agencies and policymakers to monitor pandemic developments in real-time and allocate resources more
+              effectively.
+            </p>
+            <!-- Focus -->
+            <p class="modal-duration">
+              <strong>Focus:</strong> Data Warehousing, ETL, SQL Optimization, Tableau Dashboarding, Big Data Analytics, COVID-19 Trend Analysis
+            </p>
+            <!-- Results -->
+            <strong>Results:</strong>
+            <ul class="modal-points">
+              <li>Processed and optimized over 1 billion COVID-19 records in SQL Server using indexing and partitioning, reducing query execution time by 40%.</li>
+              <li>Built a comprehensive Tableau dashboard with 20+ interactive visualizations, providing multi-dimensional insights across regions, fatality rates, and vaccination drives.</li>
+              <li>Identified critical patterns in fatality rates and vaccine distribution that helped local health agencies adjust their intervention strategies more proactively.</li>
+              <li>Designed automated ETL workflows for daily ingestion and refresh of datasets, ensuring near real-time updates for stakeholders and dashboard users.</li>
+              <li>Collaborated with analysts to develop drill-down filters and trend forecasts, increasing user engagement with the dashboard by 35%.</li>
+            </ul>
+            <!-- Skills -->
+            <p class="modal-skills">
+              <strong>Skills:</strong> SQL Server, Tableau, Excel, ETL, Big Data Analytics, Data Warehousing
+            </p>
+            <!-- Challenges -->
+            <div class="modal-challenges">
+              <strong>Challenges:</strong>
+              <ul class="modal-points">
+                <li>Faced difficulties handling 1B+ data rows without timeouts; solved by implementing data partitioning, query optimization, and incremental ETL pipelines for faster refresh cycles.</li>
+                <li>Addressed visualization overload issues by structuring the dashboard into thematic sections (fatalities, vaccination trends, regional spikes), improving clarity and decision-making effectiveness.</li>
+              </ul>
+            </div>
+            <!-- GitHub Link -->
+            <p class="modal-link">
+              <a href="https://github.com/poorna-sai-pedapudi/Covid-19-Dashboard" 
+                 target="_blank" 
+                 class="github-link">
+                <i class="fa-brands fa-github"></i> GitHub Repository
+              </a>
+            </p>
+            <!-- Back Button -->
+            <button class="back-btn" onclick="closeModal('project80-modal', '#project')">
+              <i class="fa-solid fa-arrow-left"></i> Back to Projects
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="show-more-container">
+        <button class="btn show-toggle">Show More</button>
+      </div>
+    </div>
+</div>
+
+       
+<!--------------contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>
+                    <a href="mailto:poornasaipedapudi@gmail.com" class="contact-link">
+                      <i class="fa-solid fa-envelope"></i> poornasaipedapudi@gmail.com
+                    </a>
+                  </p>
+                  <p>
+                    <a href="tel:(571) 281-1394" class="contact-link">
+                      <i class="fa-solid fa-phone"></i> +1 571 281-1394
+                    </a>
+                  </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/poorna-sai-pedapudi/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/poorna-sai-pedapudi"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/harish_pedapudi.47?igsh=NjlxaTdlc3RzcmZq&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/18qqDexyzw/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>                    
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email Address" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2025 Poorna Sai Veera Harish Pedapudi <br>All rights reserved</p>
+    </div>
+</div>
+
+
+
+
+<!--End of Main part of portfolio---->
+
+<!---Java Script code--->
+<!--- Script -1
+
+    This script is responsible for handling tab switching behavior
+    in the "About Me" section, specifically for switching between
+    "Education" and "Skills" tabs.
+
+    It works by:
+    - Selecting all tab headers (.tab-links)
+    - Selecting all tab contents (.tab-contents)
+    - Removing the "active" styles from all tabs
+    - Then adding the "active" styles only to the clicked tab and its content
+  
+--->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<!--Script 1 End-->
+
+
+  
+<!--- Script 2
+    This script controls the mobile navigation side menu toggle.
+    It is triggered by clicking the hamburger (☰) or close (×) icons.
+    Elements involved:
+    - #sidemenu: the slide-in navigation menu
+    - #toggleBtn: the menu (☰) icon
+    - #closeBtn: the close (×) icon
+  --->
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+  var toggleBtn = document.getElementById("toggleBtn");
+  var closeBtn = document.getElementById("closeBtn");
+
+  function openmenu() {
+    sidemenu.classList.add("active");
+    toggleBtn.style.display = "none";    // Hide bars
+    closeBtn.style.display = "block";    // Show close icon
+  }
+
+  function closemenu() {
+    sidemenu.classList.remove("active");
+    toggleBtn.style.display = "block";   // Show bars
+    closeBtn.style.display = "none";     // Hide close icon
+  }
+</script>
+<!--Script 2 End-->
+
+
+
+<!--- Script 3
+    This script automatically closes the mobile navigation menu (#sidemenu)
+    when any link inside the side menu is clicked.
+
+    It targets all anchor elements inside #sidemenu and attaches a click event
+    listener to each. Upon clicking:
+    - The side menu is hidden (removes the "active" class),
+    - The hamburger menu icon is shown,
+    - The close (×) icon is hidden.
+  --->
+<script>
+  // Auto-close menu when a link inside the sidemenu is clicked
+  const menuLinks = document.querySelectorAll("#sidemenu a");
+
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      sidemenu.classList.remove("active");
+      toggleBtn.style.display = "block";
+      closeBtn.style.display = "none";
+    });
+  });
+</script>
+<!--Script 3 End-->
+
+
+
+<!--- Script 4
+    This script handles opening and closing of project modals (pop-up windows).
+    It also disables body scrolling when a modal is open and re-enables it on close.
+  --->
+<script>
+    function openModal(id) {
+      document.getElementById(id).style.display = "flex";
+      document.body.style.overflow = "hidden"; // Lock scroll
+    }
+  
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+      document.body.style.overflow = "auto"; // Re-enable scroll
+    }
+  
+    function closeModalAndScroll(id, scrollToSelector) {
+      closeModal(id);
+      setTimeout(() => {
+        document.querySelector(scrollToSelector).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }, 100); // Allow close animation
+    }
+
+    
+  // ✅ Close modal if clicked outside content
+  window.addEventListener("click", function (e) {
+    document.querySelectorAll(".modal").forEach(function (modal) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+    });
+  });
+</script>
+<!--Script 4 End-->
+
+
+
+<!--- Script 5
+    This script handles project filtering by category and toggling visibility with "Show More"/"Show Less".
+    It runs once the DOM is fully loaded.
+  ---> 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const allProjects = document.querySelectorAll(".project-card-container-filter");
+  const toggleBtn = document.querySelector(".show-toggle");
+  const maxVisible = 6;
+
+  let currentFilter = "all";
+  let isExpanded = false;
+
+  function filterProjects(category) {
+    currentFilter = category;
+    isExpanded = false;
+    let visibleCount = 0;
+
+    allProjects.forEach((project) => {
+      const tags = Array.from(project.querySelectorAll(".tag")).map(tag =>
+        tag.textContent.trim().toLowerCase().replace(/\s+/g, "-")
+      );
+
+      const match = category === "all" || tags.includes(category);
+      project.style.display = "none";
+
+      if (match) {
+        visibleCount++;
+        if (visibleCount <= maxVisible) {
+          project.style.display = "block";
+        }
+      }
+    });
+
+    toggleBtn.style.display = visibleCount > maxVisible ? "block" : "none";
+    toggleBtn.textContent = "Show More";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    const matchingProjects = Array.from(allProjects).filter((project) => {
+      const tags = Array.from(project.querySelectorAll(".tag")).map(tag =>
+        tag.textContent.trim().toLowerCase().replace(/\s+/g, "-")
+      );
+      return currentFilter === "all" || tags.includes(currentFilter);
+    });
+
+    isExpanded = !isExpanded;
+
+    matchingProjects.forEach((project, index) => {
+      if (isExpanded) {
+        project.style.display = "block";
+      } else {
+        project.style.display = index < maxVisible ? "block" : "none";
+      }
+    });
+
+    toggleBtn.textContent = isExpanded ? "Show Less" : "Show More";
+
+    if (!isExpanded) {
+      document.querySelector("#project").scrollIntoView({ behavior: "smooth" });
+    }
+  });
+
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filterButtons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      filterProjects(btn.dataset.category);
+    });
+  });
+
+  filterProjects("all");
+});
+</script>
+<!--Script 5 End-->  
+  
+
+  
+<!-- Script 6
+    This script submits form data to a Google Sheet via a Google Apps Script webhook
+    and displays a temporary success message to the user after submission.
+  -->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxZYoRLFLpwle9qL-TBqCrLsTvgBPPJMVwBXWz8fSiVvSG5pbgThfJY-6c0trp5jZU2wg/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        setTimeout(() => {
+          msg.innerHTML = "Thank you for the response, message sent successfully";
+          msg.classList.add("visible");
+        }, 1000); // ✅ Show message after 1 second
+
+        setTimeout(() => {
+          form.reset(); // ✅ Clear form 2 seconds after message appears
+        }, 3000); // (1s delay + 2s visible = 3s total)
+
+        setTimeout(() => {
+          msg.classList.remove("visible");
+          msg.innerHTML = "";
+        }, 6000); // Hide message after 6 seconds total
+      })
+      .catch(error => console.error('Error!', error.message));
+  });
+</script>
+<!--Script 6 End-->  
+
+
+
+<!-- Scroll to Top Button -->
+<a href="#" class="scroll-top" id="scrollBtn">
+  <i class="fa-solid fa-arrow-up"></i>
+</a>
+
+
+
+<!--- Script 7
+    This script handles the visibility and behavior of the "Scroll to Top" button.
+    It shows the button when the user scrolls down, and smoothly scrolls to the top
+    when the button is clicked.
+  -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const scrollBtn = document.getElementById("scrollBtn");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 300) {
+        scrollBtn.style.display = "flex";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    });
+
+    scrollBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+</script> 
+<!--Script 7 End-->  
+  
+
+
+</body>
+</html>
+
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+-->
