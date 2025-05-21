@@ -17,8 +17,11 @@ This portfolio is designed using pure HTML, CSS, and JavaScript with scroll anim
 ## 📂 Folder Structure
 
 ├── index.html # Main HTML file
+
 ├── style.css # Custom CSS styles
+
 ├── Images/ # Profile, project, and icon images
+
 ├── Scripts (if added) # Optional: modular JS files (currently inline)
 
 ## 🛠 Built With
